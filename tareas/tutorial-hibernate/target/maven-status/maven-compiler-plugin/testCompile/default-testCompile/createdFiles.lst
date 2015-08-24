@@ -1,8 +1,0 @@
-org\appfuse\tutorial\webapp\action\SignupActionTest.class
-org\appfuse\tutorial\webapp\action\PasswordHintActionTest.class
-org\appfuse\tutorial\webapp\filter\LocaleFilterTest.class
-org\appfuse\tutorial\dao\PersonDaoTest.class
-org\appfuse\tutorial\webapp\filter\MockFilterChain.class
-org\appfuse\tutorial\webapp\action\BaseActionTestCase.class
-org\appfuse\tutorial\webapp\listener\StartupListenerTest.class
-org\appfuse\tutorial\webapp\action\UserActionTest.class
