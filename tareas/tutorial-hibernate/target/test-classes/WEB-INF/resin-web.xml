@@ -1,0 +1,13 @@
+<web-app id="tutorial-hibernate-3.5.0">
+    <jsp fast-jstl="false"/>
+
+    <!--database>
+        <jndi-name>jdbc/appfuse</jndi-name>
+        <driver type="com.mysql.jdbc.Driver">
+            <url>jdbc:mysql://localhost/tutorial_hibernate?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</url>
+            <user>root</user>
+            <password></password>
+        </driver>
+    </database-->
+</web-app>
+

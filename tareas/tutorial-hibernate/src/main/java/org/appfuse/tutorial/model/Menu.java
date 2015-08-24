@@ -1,0 +1,73 @@
+package org.appfuse.tutorial.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.appfuse.model.BaseObject;
+
+@Entity @Table(name = "menu")
+public class Menu extends BaseObject {
+
+	private Long id;
+	private String comida;
+	
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	 @Column(name="comida", length=50)
+	public String getComida() {
+		return comida;
+	}
+
+	public void setComida(String comida) {
+		this.comida = comida;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((comida == null) ? 0 : comida.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Menu other = (Menu) obj;
+		if (comida == null) {
+			if (other.comida != null)
+				return false;
+		} else if (!comida.equals(other.comida))
+			return false;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Menu [toString()=" + toString() + ", hashCode()=" + hashCode() + ", getClass()=" + getClass()
+				+ "]";
+	}
+	
+}
